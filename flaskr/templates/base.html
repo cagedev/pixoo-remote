@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+</head>
+
+<body>
+    <nav>
+        {% include 'partials/background-bars.html' %}
+        <div class="banner">TEXT</div>
+    </nav>
+
+    <header>
+        {% block header %}
+        <h1>Default Header Content</h1>
+        {% endblock header %}
+    </header>
+
+    <div class="content">
+        {% block content %}
+        <p>Default content block containing lots of content</p>
+        {% endblock content %}
+    </div>
+</body>
+
+</html>
