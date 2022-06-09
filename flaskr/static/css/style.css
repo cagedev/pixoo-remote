@@ -10,8 +10,13 @@
 }
 
 @font-face {
-    font-family: Blox2;
-    src: url('Blox2.ttf');
+    font-family: VT323;
+    src: url('VT323-Regular.ttf');
+}
+
+@font-face {
+    font-family: NokiaC22;
+    src: url('nokiafc22.ttf');
 }
 
 @font-face {
@@ -24,12 +29,14 @@
 }
 
 body {
+    background-color: var(--c5);
+    font-family: VT323, NokiaC22;
+    font-size: small;
     margin: 0;
     padding: 0;
 }
 
 nav {
-    background-color: black;
     width: 100vw;
     position: relative;
     z-index: 1;
@@ -62,7 +69,8 @@ nav {
     /* background-color: #130208; */
     /* color: rgba(1, 1, 1, 0); */
     font-family: GothicPixels;
-    color: var(--c5);
+    text-transform: uppercase;
+    color: var(--c6);
     font-size: 24px;
     text-align: left;
     position: absolute;
@@ -72,9 +80,28 @@ nav {
     left: 0;
 }
 
-.content {
+.container {
     background-color: var(--c5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
     color: var(--c1);
     margin: 4px;
     padding: 1px;
+    max-width: 1080px;
+}
+
+.content > * {
+    margin: 0;
+}
+
+.content > h1, h2, h3, h4, h5 {
+    color: #d53c6a;
+}
+
+.content > p {
+    text-align: justify;
 }

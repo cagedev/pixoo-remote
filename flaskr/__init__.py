@@ -1,7 +1,7 @@
 from flask import Flask
 
 def create_app(flag):
-    print(flag)
+    # print(flag)
     app = Flask(__name__)
 
     from flaskr.routes import index
