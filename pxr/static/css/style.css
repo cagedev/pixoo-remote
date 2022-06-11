@@ -83,7 +83,7 @@ nav {
 .container {
     background-color: var(--c5);
     width: 100%;
-    display: grid;
+    display: flex;
     justify-content: center;
 }
 
