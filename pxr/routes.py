@@ -24,6 +24,6 @@ def render_test2():
 login = Blueprint('login', __name__)
 
 
-@test.route('/login')
+@login.route('/login')
 def render_login():
-    return 'login'
+    return render_template('login.html', title='Pixoo-Remote')
