@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+</head>
+
+<body>
+    <nav>
+        {% include 'partials/background-bars.html' %}
+        <div class="banner">{{ title }}</div>
+    </nav>
+
+    <!-- <header>
+        {% block header %}
+        <h1>Default Header Content</h1>
+        {% endblock header %}
+    </header> -->
+
+    <div class="container">
+        <div class="content">
+            {% block content %}
+            <h1>Content block</h1>
+            <p>Default content block containing lots of contentDefault content block containing lots of content Default
+                content block containing lots of content Default content block containing lots of content Default
+                content block containing lots of content Default content block containing lots of content Default
+                content block containing lots of content Default content block containing lots of contentDefault content
+                block containing lots of content Default content block containing lots of contentDefault content block
+                containing lots of content Default content block containing lots of content Default content block
+                containing lots of content Default content block containing lots of content Default content block
+                containing lots of content Default content block containing lots of content Default content block
+                containing lots of content Default content block containing lots of content Default content block
+                containing lots of content Default content block containing lots of content Default content block
+                containing lots of content Default content block containing lots of content</p>
+            {% endblock content %}
+        </div>
+
+    </div>
+
+    <div class="modal">
+        <div class="button-bar">
+            <ul>
+                <li id="fs-toggle"><img src="{{ url_for('static',filename='img/icons/control_64.png') }}"></li>
+                <li id="fs-toggle"><img src="{{ url_for('static',filename='img/icons/control_64.png') }}"></li>
+                <li id="fs-toggle"><img src="{{ url_for('static',filename='img/icons/control_64.png') }}"></li>
+                <li id="fs-toggle"><img src="{{ url_for('static',filename='img/icons/control_64.png') }}"></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
