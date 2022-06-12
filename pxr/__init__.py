@@ -13,4 +13,7 @@ def create_app(flag):
     from pxr.routes import login
     app.register_blueprint(login)
 
+    from pxr.routes import control
+    app.register_blueprint(control)
+
     return app

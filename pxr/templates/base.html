@@ -44,8 +44,16 @@
     <div class="modal">
         <div class="button-bar">
             <ul>
-                <li><a href="{{ url_for('login.render_login') }}"><img src="{{ url_for('static',filename='img/icons/login_64.png') }}"></a></li>
-                <li id="fs-toggle"><img src="{{ url_for('static',filename='img/icons/control_64.png') }}"></li>
+                <li>
+                    <a href="{{ url_for('login.render_login') }}">
+                        <img src="{{ url_for('static',filename='img/icons/login_64.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('control.render_control') }}">
+                        <img src="{{ url_for('static',filename='img/icons/control_64.png') }}">
+                    </a>
+                </li>
                 <li id="fs-toggle"><img src="{{ url_for('static',filename='img/icons/control_64.png') }}"></li>
                 <li id="fs-toggle"><img src="{{ url_for('static',filename='img/icons/control_64.png') }}"></li>
             </ul>

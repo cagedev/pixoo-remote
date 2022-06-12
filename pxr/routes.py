@@ -27,3 +27,11 @@ login = Blueprint('login', __name__)
 @login.route('/login')
 def render_login():
     return render_template('login.html', title='Pixoo-Remote')
+
+
+control = Blueprint('control', __name__)
+
+
+@control.route('/control')
+def render_control():
+    return render_template('control.html', title='Pixoo-Remote')
